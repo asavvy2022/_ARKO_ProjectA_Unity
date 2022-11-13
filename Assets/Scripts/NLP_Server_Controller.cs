@@ -41,11 +41,11 @@ public class NLP_Server_Controller : MonoBehaviour
 
         Ports = new Dictionary<string, string>()
         {
-             {"mask", "22950"},                     // TeachablePi
-             {"nli", "22950"},                      //TeachablePi
-             {"qa", "22950"},                       //TeachablePi
-             {"sentiment", "22950"},                //TeachablePi
-             {"similarity", "22950"},              //TeachablePi
+             {"mask", "23050"},                     //NUC
+             {"nli", "23050"},                      //NUC
+             {"qa", "23050"},                       //NUC
+             {"sentiment", "23050"},                //NUC
+             {"similarity", "22950"},               //NUC
              {"summarizationA", "23050"},           //NUC
              {"summarizationB", "23050"},           //NUC (Not Using This)
              {"textgenA", "23050"},                 //NUC - GPT2
@@ -53,7 +53,7 @@ public class NLP_Server_Controller : MonoBehaviour
              {"textgenC", "23050"},                 //NUC
              {"keyword", "23050"},                  //NUC
              {"word2vec", "23050"},                 //NUC
-             {"doc2vec", "23050"},                 //NUC
+             {"doc2vec", "23050"},                  //NUC
         };
 
         
