@@ -45,7 +45,7 @@ public class NLP_Server_Controller : MonoBehaviour
              {"nli", "23050"},                      //NUC
              {"qa", "23050"},                       //NUC
              {"sentiment", "23050"},                //NUC
-             {"similarity", "22950"},               //NUC
+             {"similarity", "23050"},               //NUC
              {"summarizationA", "23050"},           //NUC
              {"summarizationB", "23050"},           //NUC (Not Using This)
              {"textgenA", "23050"},                 //NUC - GPT2
