@@ -14,6 +14,7 @@ public class NLP_Mask_Controller : MonoBehaviour
     public InputField inputField;
     public string MaskedWord = "";
     List<string> ReturnedWords;
+    public Text Result;
 
     private void Start()
     {
@@ -26,7 +27,8 @@ public class NLP_Mask_Controller : MonoBehaviour
 
     IEnumerator ISendRequest()
     {
-        print("원문=" + inputField.text);
+        string Input = inputField.text;
+        print("원문=" + Input);        
         string MaskedText = MakeMaskedText(inputField);
         print("Masked Text=" + MaskedText);
         print("Masked Word=" + MaskedWord);
@@ -49,16 +51,20 @@ public class NLP_Mask_Controller : MonoBehaviour
             ReturnedWords = new List<string>();
             ReturnedWords.Add(MaskedWord);
             print("masked word:" + MaskedWord);
+            print("masked text:" + MaskedText);
+
+            string result = "input text:" + Input + "\n\n";
+            result += "masked word:" + MaskedWord + ", masked text:" + MaskedText + "\n\n";
             foreach (JObject jo in jArray)
             {
                 var returnedWord = jo["token_str"];
                 var returnedSequence = jo["sequence"];
                 print("returned word:" + jo["token_str"] + ", sequence:" + returnedSequence);
-
-                
                 ReturnedWords.Add(returnedWord.ToString());
+                result += "token:" + returnedWord + ", returned sequence:" + returnedSequence + "\n";
             }
-            print(ReturnedWords);            
+            print(ReturnedWords);
+            Result.text = result;
         }
     }
 
@@ -109,9 +115,9 @@ public class NLP_Mask_Controller : MonoBehaviour
         Request += ServerIP;
         Request += "&text=" + _MaskedText;
 
-        inputField.text = "";
-        inputField.ActivateInputField();
-        inputField.Select();
+        //inputField.text = "";
+        //inputField.ActivateInputField();
+        //inputField.Select();
         return Request;
     }
 }

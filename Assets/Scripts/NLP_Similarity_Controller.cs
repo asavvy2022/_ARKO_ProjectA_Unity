@@ -12,6 +12,7 @@ public class NLP_Similarity_Controller : MonoBehaviour
     /*** mask, nli, qa, sentiment, similarity, summarizationA, summarizationB, textgenB, textgenC ***/
     string ModelName = "similarity";
     public InputField inputField_Text1, inputField_Text2;
+    public Text Result;
 
     private void Start()
     {
@@ -45,6 +46,7 @@ public class NLP_Similarity_Controller : MonoBehaviour
 
             float Similarity = float.Parse(www.downloadHandler.text);
             print(Similarity);
+            Result.text = Similarity.ToString();
         }
     }
 

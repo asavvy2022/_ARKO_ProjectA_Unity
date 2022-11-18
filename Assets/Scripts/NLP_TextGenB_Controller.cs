@@ -12,6 +12,7 @@ public class NLP_TextGenB_Controller : MonoBehaviour
     /*** mask, nli, qa, sentiment, similarity, summarizationA, summarizationB, textgenB, textgenC ***/
     string ModelName = "textgenB";
     public InputField inputField;
+    public Text Result;
 
     private void Start()
     {
@@ -45,6 +46,7 @@ public class NLP_TextGenB_Controller : MonoBehaviour
             //var jo = JObject.Parse(www.downloadHandler.text);
             //var jArray = JArray.Parse(jsonString);
             print("GeneratedText:" + GeneratedText);
+            Result.text = GeneratedText;
         }
     }
 

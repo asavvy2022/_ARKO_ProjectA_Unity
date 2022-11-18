@@ -12,6 +12,7 @@ public class NLP_QA_Controller : MonoBehaviour
     /*** mask, nli, qa, sentiment, similarity, summarizationA, summarizationB, textgenB, textgenC ***/
     string ModelName = "qa";
     public InputField inputField_Context, inputField_Question;
+    public Text Result;
 
     private void Start()
     {
@@ -45,6 +46,7 @@ public class NLP_QA_Controller : MonoBehaviour
 
             string Answer = www.downloadHandler.text;
             print(Answer);
+            Result.text = Answer;
         }
     }
 

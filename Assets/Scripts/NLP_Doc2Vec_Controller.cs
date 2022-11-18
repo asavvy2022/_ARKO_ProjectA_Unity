@@ -12,7 +12,7 @@ public class NLP_Doc2Vec_Controller : MonoBehaviour
     /*** mask, nli, qa, sentiment, similarity, summarizationA, summarizationB, textgenB, textgenC ***/
     string ModelName = "doc2vec";
     public InputField inputField;
-
+    public Text Result;
     private void Start()
     {
         ServerController = GameObject.FindObjectOfType<NLP_Server_Controller>();
@@ -41,10 +41,14 @@ public class NLP_Doc2Vec_Controller : MonoBehaviour
         {
             print("Success:" + www.downloadHandler.text);
 
-            string GeneratedText = www.downloadHandler.text;
+            string result = www.downloadHandler.text;
             //var jo = JObject.Parse(www.downloadHandler.text);
-            //var jArray = JArray.Parse(jsonString);
-            print("Recommendations:" + GeneratedText);
+            //print(jo);
+            //var ja = JArray.Parse(result);
+            //print(ja);
+            result = result.Substring(1, result.Length - 2);
+            print(result);    
+            Result.text = result;
         }
     }
 

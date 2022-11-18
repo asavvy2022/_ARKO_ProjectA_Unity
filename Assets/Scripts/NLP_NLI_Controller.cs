@@ -12,6 +12,7 @@ public class NLP_NLI_Controller : MonoBehaviour
     /*** mask, nli, qa, sentiment, similarity, summarizationA, summarizationB, textgenB, textgenC ***/
     string ModelName = "nli"; 
     public InputField inputField_Premise, inputField_Hypothesis;
+    public Text Result;
 
     private void Start()
     {
@@ -49,6 +50,9 @@ public class NLP_NLI_Controller : MonoBehaviour
             var jo = jArray[0];
             print("label:" + jo["label"].ToString());
             print("score:" + jo["score"].ToString());
+            string Output = "label:" + jo["label"].ToString() + "\n";
+            Output += "score:" + jo["score"].ToString();
+            Result.text = Output;
         }
     }
 

@@ -12,7 +12,7 @@ public class NLP_Sentiment_Controller : MonoBehaviour
     /*** mask, nli, qa, sentiment, similarity, summarizationA, summarizationB, textgenB, textgenC ***/
     string ModelName = "sentiment";
     public InputField inputField;
-
+    public Text Result;
     private void Start()
     {
         ServerController = GameObject.FindObjectOfType<NLP_Server_Controller>();
@@ -47,6 +47,8 @@ public class NLP_Sentiment_Controller : MonoBehaviour
             var jo = jArray[0];
             print("label:" + jo["label"].ToString());
             print("score:" + jo["score"].ToString());
+
+            Result.text = "label:" + jo["label"].ToString() + "\n" + "score:" + jo["score"].ToString();
         }
     }
 

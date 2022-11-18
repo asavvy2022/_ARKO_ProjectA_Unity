@@ -12,6 +12,7 @@ public class NLP_Keyword_Controller : MonoBehaviour
     /*** mask, nli, qa, sentiment, similarity, summarizationA, summarizationB, textgenB, textgenC ***/
     string ModelName = "keyword";
     public InputField inputField;
+    public Text Result;
 
     private void Start()
     {
@@ -47,13 +48,18 @@ public class NLP_Keyword_Controller : MonoBehaviour
             //var jArray = JArray.Parse(jsonString);
             print("Keyword:" + Keyword);
 
+            string Output = "";
             string[] Keywords = Keyword.Split(',');
             for(int i = 0; i < Keywords.Length; i++)
             {
                 Keywords[i] = Keywords[i].Trim();
                 Keywords[i] = Keywords[i].Substring(1, Keywords[i].Length - 2);
                 print(Keywords[i]);
+                Output += Keywords[i];
+                Output += "\n";
             }
+
+            Result.text = Output;
 
         }
     }

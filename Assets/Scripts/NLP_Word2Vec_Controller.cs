@@ -12,7 +12,7 @@ public class NLP_Word2Vec_Controller : MonoBehaviour
     /*** mask, nli, qa, sentiment, similarity, summarizationA, summarizationB, textgenB, textgenC ***/
     string ModelName = "word2vec";
     public InputField inputField;
-
+    public Text Result;
     private void Start()
     {
         ServerController = GameObject.FindObjectOfType<NLP_Server_Controller>();
@@ -45,6 +45,7 @@ public class NLP_Word2Vec_Controller : MonoBehaviour
             //var jo = JObject.Parse(www.downloadHandler.text);
             //var jArray = JArray.Parse(jsonString);
             print("Recommendations:" + GeneratedText);
+            Result.text = GeneratedText;
         }
     }
 
