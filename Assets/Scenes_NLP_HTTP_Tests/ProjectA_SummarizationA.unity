@@ -388,7 +388,7 @@ GameObject:
   - component: {fileID: 413919064}
   - component: {fileID: 413919065}
   m_Layer: 5
-  m_Name: SummarizationB_Controller
+  m_Name: SummarizationA_Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -422,13 +422,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 413919063}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a1d64531865a244985e615b0d435633, type: 3}
+  m_Script: {fileID: 11500000, guid: b3a513ca9b4d7ec4e921f1eac46be277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inputField: {fileID: 1593765176}
-  paddingMaxLength: 200
-  noRepeatGramSize: 5
-  numBeams: 10
 --- !u!1 &460287046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1397,8 +1394,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 413919065}
-        m_TargetAssemblyTypeName: NLP_SummarizationB_Controller, Assembly-CSharp
-        m_MethodName: OnClick_SendSummarizationBRequest
+        m_TargetAssemblyTypeName: NLP_SummarizationA_Controller, Assembly-CSharp
+        m_MethodName: OnClick_SendSummarizationARequest
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
