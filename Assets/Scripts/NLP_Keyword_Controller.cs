@@ -10,7 +10,7 @@ public class NLP_Keyword_Controller : MonoBehaviour
     NLP_Server_Controller ServerController;
 
     /*** mask, nli, qa, sentiment, similarity, summarizationA, summarizationB, textgenB, textgenC ***/
-    string ModelName = "keyword";
+    string ModelName = "keywords";
     public InputField inputField;
     public Text Result;
 
