@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0039957035, g: 0.00021792635, b: 0.000000051515347, a: 1}
+  m_IndirectSpecularColor: {r: 0.003995702, g: 0.00021792622, b: 0.000000051515347, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -423,7 +423,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: "\uB0A8\uC790\uB4E4\uC774 \uCD95\uAD6C\uB97C \uD558\uACE0 \uC788\uB2E4."
+  m_Text: "\uD654\uAC00\uB4E4\uC774 \uADF8\uB9BC\uC744 \uADF8\uB9AC\uACE0 \uC788\uB2E4."
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -957,7 +957,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCD95\uAD6C\uB97C \uD558\uACE0 \uC788\uB294 \uB0A8\uD559\uC0DD\uB4E4."
+  m_Text: "\uADF8\uB9BC\uC744 \uADF8\uB9AC\uACE0 \uC788\uB294 \uC870\uAC01\uAC00\uB4E4."
 --- !u!222 &1098490681
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1719,7 +1719,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: "\uCD95\uAD6C\uB97C \uD558\uACE0 \uC788\uB294 \uB0A8\uD559\uC0DD\uB4E4."
+  m_Text: "\uADF8\uB9BC\uC744 \uADF8\uB9AC\uACE0 \uC788\uB294 \uC870\uAC01\uAC00\uB4E4."
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -1832,7 +1832,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB0A8\uC790\uB4E4\uC774 \uCD95\uAD6C\uB97C \uD558\uACE0 \uC788\uB2E4."
+  m_Text: "\uD654\uAC00\uB4E4\uC774 \uADF8\uB9BC\uC744 \uADF8\uB9AC\uACE0 \uC788\uB2E4."
 --- !u!222 &2067343906
 CanvasRenderer:
   m_ObjectHideFlags: 0
